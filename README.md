@@ -17,6 +17,12 @@ Install the dependencies:
 cd koa-tdd-api && npm i
 ```
 
+Start the server:
+
+```bash
+npm run dev
+```
+
 ## Development
 
 Run all the tests with:
