@@ -1,7 +1,7 @@
 # koa-tdd-api
 > A sample Koa 2 RESTful API, tests included
 
-Companion repo for [An Introduction to Building Test Driven RESTful APIs with Koa 2, Mocha, and Chai](https://www.valentinog.com/blog/TODO)
+Companion repo for [An Introduction to Building TDD RESTful APIs with Koa 2, Mocha and Chai](https://www.valentinog.com/blog/test-driven-api-koa-2-mocha-chai/)
 
 ## Development
 
@@ -23,7 +23,7 @@ Start the server:
 npm run dev
 ```
 
-## Development
+## Test
 
 Run all the tests with:
 
