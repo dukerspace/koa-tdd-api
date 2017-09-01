@@ -8,8 +8,8 @@ const PORT = process.env.PORT || 8081;
 app.use(bodyParser());
 app.use(articlesRoutes.routes());
 
-const server = app.listen(PORT, () => {
-  console.log(`Server listening on port: ${PORT}`);
+const server = app.listen(PORT).on("error", err => {
+  console.error(err);
 });
 
 module.exports = server;
