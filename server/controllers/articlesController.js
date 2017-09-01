@@ -15,7 +15,7 @@ const index = async ctx => {
 
 const show = async ctx => {
   try {
-    const id = ctx.params.id;
+    const { id } = ctx.params;
     const article = await knex("articles")
       .select()
       .where({ id });
@@ -35,7 +35,8 @@ const show = async ctx => {
 
 const create = async ctx => {
   try {
-    const article = await knex("articles").insert(ctx.request.body);
+    const { body } = ctx.request;
+    const article = await knex("articles").insert(body);
     if (!article.length) {
       throw new Error("The resource already exists");
     }
