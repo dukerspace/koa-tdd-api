@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "NODE_ENV=dev nodemon server/index.js",
-    "test": "jest --forceExit" // See https://github.com/facebook/jest/issues/3686
+    "test": "jest --forceExit"
   },
   "jest": {
     "testEnvironment": "node"
