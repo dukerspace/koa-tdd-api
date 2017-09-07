@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "NODE_ENV=dev nodemon server/index.js",
-    "test": "mocha"
+    "test": "jest --forceExit" // See https://github.com/facebook/jest/issues/3686
+  },
+  "jest": {
+    "testEnvironment": "node"
   },
   "author": "",
   "license": "MIT",
@@ -16,10 +19,9 @@
     "koa-router": "^7.2.1"
   },
   "devDependencies": {
-    "chai": "^4.1.1",
-    "chai-http": "^3.0.0",
-    "mocha": "^3.5.0",
+    "jest": "^21.0.1",
     "nodemon": "^1.11.0",
-    "sqlite3": "^3.1.8"
+    "sqlite3": "^3.1.8",
+    "supertest": "^3.0.0"
   }
 }
