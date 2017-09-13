@@ -1,6 +1,8 @@
 # koa-tdd-api
 > A sample Koa 2 RESTful API, tests included
 
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](LICENSE)
+
 Companion repo for [An Introduction to Building TDD RESTful APIs with Koa 2, Mocha and Chai](https://www.valentinog.com/blog/test-driven-api-koa-2-mocha-chai/)
 
 ## Development
